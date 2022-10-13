@@ -17,8 +17,7 @@ body{
   background:rgb(64, 124, 184);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  
 }
-.logo{
-  overflow: hidden;
+.logo{ 
   padding: 10px 50px 5px 50px;  
 }
 
