@@ -14,11 +14,12 @@ body{
  
 }
 .header-container{  
-  background:rgb(64, 124, 184);
+  background:#fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  
 }
 .logo{ 
-  padding: 10px 50px 5px 50px;  
+  padding: 10px 50px 5px 50px;
+  background: #407cb8;  
 }
 
 .logo-text{
@@ -34,7 +35,7 @@ body{
  # Navigation Menu
 --------------------------------------------------------------*/
 .navbar{
-  padding-left: 20rem;
+  /* padding-left: 20rem; */
 }
 .nav-item{
   padding-right: 10px;
@@ -189,7 +190,7 @@ i {
 /* Call to action section */
 #callta{
   width: 100%;
-  height: 30vh;  
+  height: 55vh;  
   text-align: center;
   background: url(../image/callta.jpg) top center;
   background-size: cover; 
@@ -208,7 +209,18 @@ i {
 }
 .call-to-action{
   position: relative;
-  top: 20%;
+  top: 30%;
+  align-items: center;
+}
+@media screen and (max-width:768px) {
+  .call-to-action{
+    top: 20%;
+  }
+}
+@media screen and (max-width:400px) {
+  .call-to-action{
+    top: 10%;
+  }
 }
 .call-to-action h1{
   color: #fff !important;
@@ -221,6 +233,7 @@ i {
 .call-btn{    
   border-color: #fff;
   color: #fff;
+  width: 200px;
   border-radius: 20px;
   border: 3px solid #fff;
   background: transparent;
@@ -236,7 +249,7 @@ i {
 /* Services sector */
 #services{
   position: relative;
-  height: 80vh;
+  /* height: 80vh; */
   background: rgb(240, 240, 240) !important;
   padding: 3rem 0;
 }
@@ -270,6 +283,12 @@ i {
   flex-direction: column;
   align-items: center;
   padding: 2rem 0;
+}
+@media screen and (max-width:768px){
+  .services-card{
+    margin: 0;
+    padding: 0;
+  }
 }
 .services-card a{
   text-decoration: none;
@@ -310,6 +329,11 @@ i {
 /* Portfolio section */
 #portfolio{
   margin: 3rem 0; 
+}
+@media screen and (max-width:768px){
+  #portfolio{
+    margin: 1rem 0;
+  }
 }
 .portfolio h2{
   text-transform: uppercase;
